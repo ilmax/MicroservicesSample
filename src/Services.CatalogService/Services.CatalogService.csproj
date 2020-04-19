@@ -13,8 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\Services.Infrastructure\Services.Infrastructure.csproj" />
+    <ProjectReference Include="..\Services.Infrastructure\Services.Infrastructure.csproj" />
   </ItemGroup>
-
-
 </Project>
