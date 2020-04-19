@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  api.gateway:
+    image: apigateway:latest
+    build:
+      context: .
+      dockerfile: src/Services.ApiGatewayService/Dockerfile
+    container_name: apigateway
+
+  catalog:
+    image: catalog:latest
+    build:
+      context: .
+      dockerfile: src/Services.CatalogService/Dockerfile
+    container_name: catalog
+
+  orders:
+    image: orders:latest
+    build:
+      context: .
+      dockerfile: src/Services.OrderService/Dockerfile
+    container_name: orders
+
+  consul:
+    image: consul:latest
+    command: consul agent -dev -log-level=warn -ui -client=0.0.0.0
+    hostname: consul
+    container_name: consul
