@@ -16,7 +16,8 @@ services:
   catalog:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=https://+:443;http://+:80
+#      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_URLS=http://+:80
       - ServiceConfig__serviceRegistryUri=http://consul:8500
       - ServiceConfig__serviceName=catalog
     ports:
@@ -29,7 +30,8 @@ services:
   orders:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=https://orders:443;http://orders:80
+#      - ASPNETCORE_URLS=https://orders:443;http://orders:80
+      - ASPNETCORE_URLS=http://+:80
       - ServiceConfig__serviceRegistryUri=http://consul:8500
       - ServiceConfig__serviceName=orders
     ports:

@@ -24,7 +24,7 @@ namespace Services.CatalogService
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection(); TODO
 
             app.UseRouting();
 

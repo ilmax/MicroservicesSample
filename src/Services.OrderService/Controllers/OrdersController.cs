@@ -11,5 +11,11 @@ namespace Services.OrderService.Controllers
         {
             return Ok("List of orders");
         }
+
+        [HttpGet("{id:int}")]
+        public ActionResult GetOrder(int id)
+        {
+            return Ok($"Order {id}");
+        }
     }
 }
