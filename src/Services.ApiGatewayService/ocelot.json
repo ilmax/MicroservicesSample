@@ -1,28 +1,28 @@
 {
   "ReRoutes": [
     {
-      "UpstreamPathTemplate": "/orders-api/{everything}",
+      "UpstreamPathTemplate": "/api/orders/{everything}",
       "UpstreamHttpMethod": [ "Get" ],
       "ServiceName": "orders",
       "DownstreamPathTemplate": "/api/orders/{everything}",
       "DownstreamScheme": "http"
     },
     {
-      "UpstreamPathTemplate": "/orders-api",
+      "UpstreamPathTemplate": "/api/orders",
       "UpstreamHttpMethod": [ "Get" ],
       "ServiceName": "orders",
       "DownstreamPathTemplate": "/api/orders",
       "DownstreamScheme": "http"
     },
     {
-      "UpstreamPathTemplate": "/catalog-api/{everything}",
+      "UpstreamPathTemplate": "/api/catalog/{everything}",
       "UpstreamHttpMethod": [ "Get" ],
       "ServiceName": "catalog",
       "DownstreamPathTemplate": "/api/catalog/{everything}",
       "DownstreamScheme": "http"
     },
     {
-      "UpstreamPathTemplate": "/catalog-api",
+      "UpstreamPathTemplate": "/api/catalog",
       "UpstreamHttpMethod": [ "Get" ],
       "ServiceName": "catalog",
       "DownstreamPathTemplate": "/api/catalog",

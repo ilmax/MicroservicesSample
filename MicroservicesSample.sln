@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.ApiGatewayService"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8BFA1779-3E0D-46A8-B0BD-53A628F10575}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Infrastructure", "src\Services.Infrastructure\Services.Infrastructure.csproj", "{4B30AC5D-A220-4353-BC63-09968AA64616}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Infrastructure", "src\Services.Infrastructure\Services.Infrastructure.csproj", "{4B30AC5D-A220-4353-BC63-09968AA64616}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Hateoas", "src\Services.Hateoas\Services.Hateoas.csproj", "{346E9F96-057E-435E-A5F3-6DD5469194CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4B30AC5D-A220-4353-BC63-09968AA64616}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B30AC5D-A220-4353-BC63-09968AA64616}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B30AC5D-A220-4353-BC63-09968AA64616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{346E9F96-057E-435E-A5F3-6DD5469194CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346E9F96-057E-435E-A5F3-6DD5469194CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346E9F96-057E-435E-A5F3-6DD5469194CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346E9F96-057E-435E-A5F3-6DD5469194CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

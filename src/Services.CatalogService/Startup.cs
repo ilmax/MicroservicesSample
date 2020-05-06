@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Services.CatalogService.Hypermedia;
+using Services.Hateoas.Infrastructure;
 using Services.Infrastructure;
 
 namespace Services.CatalogService
@@ -17,9 +19,10 @@ namespace Services.CatalogService
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddHateoas(opt => opt.RemoveSystemJsonFormatter = true);
             services.AddConsul(Configuration.GetServiceConfig());
             services.AddHostedService<ServiceDiscoveryHostedService>();
+            services.AddScoped<IEnricher, CatalogEnricher>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
